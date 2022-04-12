@@ -9,7 +9,7 @@ while (index < n)
 {
     if (array[index] == find)
     {
-        Console.WriteLine(index);
+        Console.WriteLine(index); //а вывести информацию с массива можно так Console.WriteLine(array[index])
         break;
     }
     index++;
