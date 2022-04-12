@@ -6,7 +6,7 @@
     return result;
 }
 
-int a1 = 15;
+int a1 = 112125;
 int b1 = 21;
 int c1 = 39;
 int a2 = 12;
@@ -16,11 +16,17 @@ int a3 = 13;
 int b3 = 23111;
 int c3 = 313;
 
-int max1 = MaxFunction(a1,b1,c1); //MaxFunction(берёт сюда информацию из указанных в переменных a,b,c)
-int max2 = MaxFunction(a2,b2,c2);   //MaxFunction - это название, можно дать любое, например в лекции просто MAX
-int max3 = MaxFunction(a3,b3,c3);
+//int max1 = MaxFunction(a1,b1,c1); //MaxFunction(берёт сюда информацию из указанных в переменных a,b,c)
+//int max2 = MaxFunction(a2,b2,c2);   //MaxFunction - это название, можно дать любое, например в лекции просто MAX
+//int max3 = MaxFunction(a3,b3,c3);
 
-int max = MaxFunction(max1,max2,max3);
+//int max = MaxFunction(max1,max2,max3);
+
+int max = MaxFunction(          // можно записать одной строкой! int max = MaxFunction(MaxFunction(a1,b1,c1), MaxFunction(a2,b2,c2), MaxFunction(a3,b3,c3));
+    MaxFunction(a1,b1,c1), 
+    MaxFunction(a2,b2,c2), 
+    MaxFunction(a3,b3,c3)
+);
 
 
 
