@@ -42,7 +42,7 @@ Method21(count: 2, msg: "текст сообщения метода 21 не по
 //значения которого мы возвращаем (int doublt string)
 int Method3()
 {
-    return DateTime.Now.Year;
+    return DateTime.Now.Year; // команда показывающая текущий год
 }
 
 int year = Method3(); //кладём в переменную функцию
@@ -65,3 +65,7 @@ string Method4(int count, string text) //кстати название конт�
 
 string result = Method4(10, "asdf");
 Console.WriteLine(result);
+
+
+Console.WriteLine(DateTime.Now.Year); // команда показывающая текущий год
+string A = String.Empty; //команда пустой строки (по другому было бы string result = "")
